@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury hotel offering exquisite accommodations, fine dining, and premium amenities. Book your stay now for an unforgettable experience.">
+    <meta name="keywords" content="hotel, luxury, accommodations, reservations, dining, amenities">
+    <title>$AMI HOTEL-Login</title>
+    <link rel="icon" href="/logo/favicon1.ico">
+</head>
+
+<body>
+    
+<center> 
+    <header> 
+    <h1>$AMI HOTEL</h1>
+    <h2>WELCOME TO LUXURY AND COMFORT</h2>
+    </header>
+</center>
+        </tr>
+        <nav >
+            <table width="100%" bgcolor="607274">
+            <tr>
+          <td><a href="/html/hompage.html"><h2>Home</h2></a></td>  
+           <td><a href="/html/accomodation.html"><h2>Accommodations</h2> </a></td> 
+           <td><a href="/html/reservation.html"><h2>Reservations</h2></a></td>
+           <td><a href="/html/conference.html"><h2>Conference & Events</h2></a></td>
+           <td><a href="/html/dining.html"><h2>Dining</h2></a></td> 
+           <td><a href="/html/amenities.html"><h2>Amenities</h2></a></td> 
+           <td><a href="/html/contactus.html"><h2>About Us</h2></a></td> 
+        
+        <td><br><a href="/html/signupform.html"><h3>SignUp</h3></a><br></td>
+            
+            
+            
+            
+      
+        </tr>
+    
+    </table>
+        </nav>
+
+    <center>
+      <fieldset>
+        <legend>Reservation</legend>
+
+        <form action="/submit_reservation" method="post">
+          <table width="100%" bgcolor="9EC8B9">
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" id="name" name="name" required /></td>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" id="email" name="email" required /></td>
+            </tr>
+            <tr>
+              <td><label for="phone">Phone:</label></td>
+              <td>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{10}"
+                  placeholder="Enter a 10-digit phone number"
+                  required
+                />
+              </td>
+              <td><label for="checkInDate">Check-in Date:</label></td>
+              <td>
+                <input
+                  type="date"
+                  id="checkInDate"
+                  name="checkInDate"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="checkOutDate">Check-out Date:</label></td>
+              <td>
+                <input
+                  type="date"
+                  id="checkOutDate"
+                  name="checkOutDate"
+                  required
+                />
+              </td>
+              <td><label for="roomType">Room Type:</label></td>
+              <td>
+                <select id="roomType" name="roomType" required>
+                  <option value="standard">Standard Room</option>
+                  <option value="deluxe">Deluxe Room</option>
+                  <option value="Double-Bed">Double Bed</option>
+                  <option value="Presidential">Presidential</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="adults">Number of Adults:</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="adults"
+                  name="adults"
+                  min="1"
+                  max="10"
+                  required
+                />
+              </td>
+              <td><label for="children">Number of Children:</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="children"
+                  name="children"
+                  min="0"
+                  max="10"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="specialRequests">Special Requests:</label></td>
+              <td colspan="3">
+                <textarea
+                  id="specialRequests"
+                  name="specialRequests"
+                  rows="4"
+                  placeholder="Any special requests or comments"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="creditCard">Credit Card:</label></td>
+              <td>
+                <input type="text" id="creditCard" name="creditCard" required />
+              </td>
+              <td><label for="pin">PIN:</label></td>
+              <td>
+                <input
+                  type="password"
+                  id="pin"
+                  name="pin"
+                  minlength="4"
+                  maxlength="4"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="gymReservation">Gym Reservation:</label></td>
+              <td>
+                <input
+                  type="checkbox"
+                  id="gymReservation"
+                  name="gymReservation"
+                />
+              </td>
+              <td><label for="spaReservation">Spa Reservation:</label></td>
+              <td>
+                <input
+                  type="checkbox"
+                  id="spaReservation"
+                  name="spaReservation"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="poolReservation">Swimming Pool Reservation:</label>
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  id="poolReservation"
+                  name="poolReservation"
+                />
+              </td>
+              <td>
+                <label for="conferenceHallReservation"
+                  >Conference Hall Reservation:</label
+                >
+              </td>
+              <td>
+                <input
+                  type="checkbox"
+                  id="conferenceHallReservation"
+                  name="conferenceHallReservation"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <button type="submit">Submit Reservation</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </fieldset>
+    </center>
+
+    <center>
+      <table width="100%" bgcolor="DED0B6">
+        <tr>
+          <td>
+            <a href="/html/signupform.html"
+              ><h3>Sign Up<br /></h3
+            ></a>
+            <a href="/html/login.html"><h3>Login In</h3></a>
+          </td>
+          <td>
+            <h3>
+              Follow Us:<br />
+              Facebook; <a href="#twitter">sami hotel official</a><br />
+              Twitter: <a href="#twitter"> 5@sami5star.Twitter</a><br />
+              Instagram: <a href="#instagram">insta.sami5star</a>
+            </h3>
+          </td>
+          <td>
+            <h3>
+              <p><strong>Contact us</strong></p>
+              <p>email: sami5star@gmail.com</p>
+              <p>phone:+251910061435</p>
+            </h3>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <footer>
+      <table width="100%" bgcolor="B2A59B">
+        <tr>
+          <td>
+            <br /><br /><br />
+            <p><center>&copy; 2023 $ami Hotel. All rights reserved.</center></p>
+            <br />
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
